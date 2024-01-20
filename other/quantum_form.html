@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="English" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>量子力学的形式理论 &#8212; My Blog en</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PPZXJ9B1BG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PPZXJ9B1BG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'other/quantum_form';</script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Choices in Crossroads" href="rglights.html" />
+    <link rel="prev" title="Newton 力学" href="Newton.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="English"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome - Homepage
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../note/23.12.html">Read: 23.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/millerorr.html">Proof of Miller-Orr Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/solow.html">Solow Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/intro_causalinfer.html">Introduction to Causal Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mathmodel.html">Elements of Mathmatical Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/astrology.html">Astrology Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/crypto.html">Cryptocurrency Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/pre1.html">Pre 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../proj.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../swarm/Swarm.html">Swarm Report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">The Left Dream of Red Chamber</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../wonder.html">Friday</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.19.html">Frivolity: Astrofinance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.12.html">Frivolity: Transportation Cost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/24.1.5.html">Frivolity: C&amp;C Theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.29.html">Frivolity: Theory about Making Friends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.22.html">Frivolity: Leaning, Gluing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.15.html">Frivolity: Dividend Signaling Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.8.html">Notion: Settability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.12.1.html">Sequel: Model for the Nations II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.24.html">Frivolity: Model for the Nations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.17.html">Notion: The Apple that Never Lands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.10.html">Frivolity: Weighted Synchronicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.11.3.html">Frivolity: Love in Evolution and Equilirium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.27.html">Frivolity: Red-light Preference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.20.html">Frivolity: Theory of Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.13.html">Frivolity: Stand up and Cheer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.10.6.html">Frivolity: Knoid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.22.html">Frivolity: Measure Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.15.html">Frivolity: Can I Update in Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.8.html">Frivolity: New Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.25.html">Frivolity: Currency Reverie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.18.html">Notion: Templatization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.11.html">Frivolity: Annealed Polity Emerges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.8.4.html">Frivolity: WeRun Pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.28.html">Frivolity: Meme Alive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.21.html">Frivolity: Winner-Take-All Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.14.html">Frivolity: Semantic Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.7.7.html">Notion: Excellent Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.30.html">Frivolity: How to Get a Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.23.html">Notion: Hype Significance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.16.html">Frivolity: Homomorphic Observation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.9.html">Frivolity: Dots and Boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.6.2.html">Frivolity: Choose Your Seat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.26.html">Frivolity: Introduction to Roll Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.19.html">Frivolity: Moments Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.12.html">Frivolity: Touter or Scalper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wonder/23.5.5.html">Frivolity: Start and Bikes on Campus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../know.html">Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../know/cookbook.html">The Matrix Cookbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/py3rdpartylib.html">Python 第三方库管理等问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/pyPEP8.html">Python 代码规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/Gregg.html">Gregg Shorthand</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sund.html">Sundries</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sund/articles.html">Articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/links.html">Links Portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/ques.html">Fun Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/folkscience.html">Biography of Folk Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/toiletology.html">Toiletology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">行乞寺记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/olympics.html">Words on Olympiad</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../other.html">Column</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Stokes.html">Stokes Formula</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Newton.html">Newton 力学</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rglights.html">Choices in Crossroads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/other/quantum_form.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>量子力学的形式理论</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>量子力学的形式理论<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>系统的运动状态<strong>由 Hilbert 空间（所有平方可积函数构成的线性空间）中的一个矢量 <span class="math notranslate nohighlight">\(\ket{ \mathfrak{I} }\)</span> 描述</strong>。</p>
+<blockquote>
+<div><p><span class="math notranslate nohighlight">\(\ket{ \mathfrak{I} } \in \mathcal{H}\)</span> ， <span class="math notranslate nohighlight">\(\mathcal{H}\)</span> 可以为分立维空间，也可以为连续维空间。 <span class="math notranslate nohighlight">\(\bra{I} \in \mathcal{H}^{ * }\)</span> 为其对偶矢量，把矢量映射为一个数。对分立维矢量，其对应的左矢看作其 Hermitian 的左乘；对连续维矢量（函数），看作一个对积分的指定 <span class="math notranslate nohighlight">\(\int f^{ * }(x) [ \dots ] \mathrm{~d}^{3} x\)</span> 。</p>
+</div></blockquote>
+<p><strong>可测力学量与 Hermitian 算符一一对应</strong>，对可测力学量的观测结果必为其对应算符的本征值之一。将态矢 <span class="math notranslate nohighlight">\(\ket{ \mathfrak{ I } }\)</span> 按照其本征函数集做线性展开，得到的<strong>系数取模方即为测得对应本征态的概率。测量过后态矢坍缩为对应本征态</strong>。</p>
+<blockquote>
+<div><p>Hermitian 算符为 Hilbert 空间中的线性变换，且对应的矩阵为 Hermitian 矩阵（转置共轭等于自身）。由此可以证明，Hermitian 算符的本征值必为实数，属于不同本征值的本征函数必定正交。Dirac 取公理为，可测力学量对应的 Hermitian 算符必有一个正交完备的本征函数集。</p>
+<p>利用归一基 <span class="math notranslate nohighlight">\(\ket{a}\)</span> 对应的算符 <span class="math notranslate nohighlight">\(\hat{P} = \ket{a} \bra{a}\)</span> 可以求得态矢在其方向上的投影。类似地，可以将态矢按照本征函数集展开。</p>
+<div class="math notranslate nohighlight">
+\[
+\ket{ \mathfrak{I} } = \sum_{a} \ket{a} \braket{ a | \mathfrak{I} }
+  \]</div>
+<p>通过确定在每个基矢 <span class="math notranslate nohighlight">\(\ket{a}\)</span> 上的系数，我们可以确定对应的态。这种描述的态矢称为可测力学量 <span class="math notranslate nohighlight">\(A\)</span> 对应的表象中的波函数。<strong>不同表象间可以相互变换</strong>，例如坐标表象和动量表象</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+ \begin{array}{l}
+ \ket{ \mathfrak{I} } = \sum_{r} \ket{r} \underbrace{ \braket{ r | \mathfrak{I} } }_{ \psi(r) } = \sum _{p} \ket{p} \underbrace{ \braket{ p | \mathfrak{I} } } _{ \phi(p) } = \sum _{p,r} \ket{p} \braket{ p | r} \braket{ r | \mathfrak{I} } \\
+ \phi(p) = \sum _{r} \braket{ p | r } \psi(r)
+ \end{array}
+  \end{split}\]</div>
+<p>考虑坐标表象中的动量本征函数 <span class="math notranslate nohighlight">\(\psi_{p}(r,t) = A(t) e^{ i \frac{p \cdot r}{\hbar} }\)</span> ，有 <span class="math notranslate nohighlight">\(\ket{p} = \sum_{r} \ket{r} \psi_{p}(r)\)</span> ， 即</p>
+<div class="math notranslate nohighlight">
+\[
+ \braket{ r | p } = \psi_{p}(r) = \frac{1}{(2 \pi \hbar)^{3/2}} e^{ i \frac{ p \cdot r }{ \hbar } }
+  \]</div>
+<p>作为理论自洽性的考量，还要证明两个表象下态矢的演化规律等价。</p>
+</div></blockquote>
+<p>由于实验上测得的都是可测力学量的概率分布，即 Hilbert 空间中态矢与可测力学量归一基底的内积模方。因而态矢的演化有两种视角，一种是认为力学量对应的算符及其特征矢量不随时间演化，而是态矢与能量本征矢量随时间演化（Schrodinger 绘景）；另一种是认为态矢与能量本征函数不随时间演化，而是力学量算符随时间演化（Heisenberg 绘景）。（为什么能量本征函数上的系数不变？）</p>
+<p><strong>Schrodinger 绘景下，态矢的运动方程为</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{l}
+i \hbar \frac{d}{dt} \ket{\psi} = \hat{H} \ket{\psi} \\
+\ket{\psi(t)} = e^{ -i \frac{ \hat{H} t }{\hbar} } \ket{\psi(0)} = \hat{U} \ket{\psi(0)}
+\end{array}
+\end{split}\]</div>
+<p>力学量期望的演化为</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{l}
+\braket{A} &amp;= \bra{\psi(t)} \hat{A} \ket{\psi(t)} \\
+&amp;= \bra{\psi(0)} \hat{U}^{+} \hat{A} \hat{U} \ket{\psi(0)}
+\end{array}
+\end{split}\]</div>
+<p>后者为 Heisenberg 绘景。</p>
+<blockquote>
+<div><p>Heisenberg 绘景中， <span class="math notranslate nohighlight">\(\hat{A}(t) = \sum_{m,n} \ket{m} A_{m,n} e^{i \frac{ E_{m} - E_{n} }{\hbar} t } \bra{n}\)</span></p>
+</div></blockquote>
+<blockquote>
+<div><p>具体到坐标表象中， <span class="math notranslate nohighlight">\(\ket{\psi} = \sum_{r} \ket{r} \psi(r)\)</span> ， <span class="math notranslate nohighlight">\(\hat{H} = \frac{\hat{p}^{2}}{2m} + V(\hat{r})\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+ i\hbar \frac{\partial}{\partial t} \psi(r, t) = \left( - \frac{\hbar^{2}}{2m} \nabla^{2} + V(r) \right) \psi(r, t)
+  \]</div>
+<p>我们一般先求解所谓定态 Schrodinger 方程</p>
+<div class="math notranslate nohighlight">
+\[
+ \hat{H} \psi_{E}(r) = E \psi_{E}(r)
+  \]</div>
+<p>然后再将初态波函数以之为基底展开，求得任意时刻的波函数。（直接用上面的算符表达式计算波函数演化也行。）此后我们再求可测力学量 <span class="math notranslate nohighlight">\(\hat{A}\)</span> 的本征函数</p>
+<div class="math notranslate nohighlight">
+\[
+ \hat{A} \psi_{a}(r) = a \psi_{a}(r)
+  \]</div>
+<p>通过将某刻波函数与之做内积得到测量的概率分布。</p>
+</div></blockquote>
+<p>最后，作为一个应用，我们来讨论不确定原理与最小不确定波包。</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{l}
+\sigma_{A}^{2} \sigma_{B}^{2} &amp;= \braket{ (\hat{A} - \braket{A}) \psi | (\hat{A} - \braket{A}) \psi } \braket{ (\hat{B} - \braket{B}) \psi | (\hat{B} - \braket{B}) \psi } \\
+&amp;\geq \left\lvert \braket{ (\hat{A} - \braket{A}) \psi | (\hat{B} - \braket{B}) \psi } \right\rvert^{2} \\
+&amp;\geq \left\lvert \frac{1}{2i} ( \braket{ (\hat{A} - \braket{A}) \psi | (\hat{B} - \braket{B}) \psi } - \braket{ (\hat{B} - \braket{B}) \psi | (\hat{A} - \braket{A}) \psi } ) \right\rvert^{2} \\
+&amp;\geq \left( \frac{1}{2i} \braket{ [\hat{A}, \hat{B}] } \right)^{2}
+\end{array}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\iff (\hat{A} - \braket{A}) \psi = ia (\hat{B} - \braket{B}) \psi
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt} \braket{A} = \frac{1}{i \hbar} \braket{ [\hat{A}, \hat{H}] } + \underbrace{ \braket{ \frac{\partial \hat{A}}{\partial t} } }_{\mathrm{usually = 0}}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{A} \sigma_{H} \geq \frac{\hbar}{2} \left\lvert \frac{d \braket{A}}{dt} \right\rvert \implies \frac{\sigma_{A}}{ \lvert d\braket{A}/dt \rvert } \sigma_{H} \geq \frac{\hbar}{2}
+\]</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./other"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Newton.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Newton 力学</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rglights.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Choices in Crossroads</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Laplx (Hao Chen)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

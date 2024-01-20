@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="English" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Frivolity: Theory of Theory &#8212; My Blog en</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PPZXJ9B1BG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PPZXJ9B1BG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'wonder/23.10.20';</script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Frivolity: Stand up and Cheer" href="23.10.13.html" />
+    <link rel="prev" title="Frivolity: Red-light Preference" href="23.10.27.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="English"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome - Homepage
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../note.html">Notes</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../note/23.12.html">Read: 23.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/evol_game.html">Outline of Evolutionary Game Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mechbrief.html">A Brief Draft of Classical Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/millerorr.html">Proof of Miller-Orr Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/solow.html">Solow Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/intro_causalinfer.html">Introduction to Causal Inference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/mathmodel.html">Elements of Mathmatical Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/astrology.html">Astrology Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/crypto.html">Cryptocurrency Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../note/pre1.html">Pre 1</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../proj.html">Projects</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../swarm/Swarm.html">Swarm Report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../hlm/hlm_index.html">The Left Dream of Red Chamber</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../wonder.html">Friday</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="24.1.19.html">Frivolity: Astrofinance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.1.12.html">Frivolity: Transportation Cost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="24.1.5.html">Frivolity: C&amp;C Theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.29.html">Frivolity: Theory about Making Friends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.22.html">Frivolity: Leaning, Gluing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.15.html">Frivolity: Dividend Signaling Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.8.html">Notion: Settability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.12.1.html">Sequel: Model for the Nations II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.24.html">Frivolity: Model for the Nations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.17.html">Notion: The Apple that Never Lands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.10.html">Frivolity: Weighted Synchronicity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.11.3.html">Frivolity: Love in Evolution and Equilirium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.27.html">Frivolity: Red-light Preference</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Frivolity: Theory of Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.13.html">Frivolity: Stand up and Cheer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.10.6.html">Frivolity: Knoid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.29.html">Frivolity: The Limit of Handwritting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.22.html">Frivolity: Measure Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.15.html">Frivolity: Can I Update in Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.8.html">Frivolity: New Game of Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.9.1.html">Frivolity: Theory of lazing in military training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.25.html">Frivolity: Currency Reverie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.18.html">Notion: Templatization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.11.html">Frivolity: Annealed Polity Emerges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.8.4.html">Frivolity: WeRun Pattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.28.html">Frivolity: Meme Alive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.21.html">Frivolity: Winner-Take-All Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.14.html">Frivolity: Semantic Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.7.7.html">Notion: Excellent Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.30.html">Frivolity: How to Get a Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.23.html">Notion: Hype Significance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.16.html">Frivolity: Homomorphic Observation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.9.html">Frivolity: Dots and Boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.6.2.html">Frivolity: Choose Your Seat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.26.html">Frivolity: Introduction to Roll Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.19.html">Frivolity: Moments Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.12.html">Frivolity: Touter or Scalper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="23.5.5.html">Frivolity: Start and Bikes on Campus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../know.html">Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../know/cookbook.html">The Matrix Cookbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/py3rdpartylib.html">Python 第三方库管理等问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/pyPEP8.html">Python 代码规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/Gregg.html">Gregg Shorthand</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sund.html">Sundries</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sund/articles.html">Articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/links.html">Links Portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/ques.html">Fun Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/folkscience.html">Biography of Folk Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/toiletology.html">Toiletology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">行乞寺记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/olympics.html">Words on Olympiad</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../other.html">Column</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../other/Stokes.html">Stokes Formula</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton 力学</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/rglights.html">Choices in Crossroads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/wonder/23.10.20.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Frivolity: Theory of Theory</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">理论的理论</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="frivolity-theory-of-theory">
+<h1>Frivolity: Theory of Theory<a class="headerlink" href="#frivolity-theory-of-theory" title="Permalink to this heading">#</a></h1>
+<section id="id1">
+<h2>理论的理论<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>我要讲的是“学科的学科”——虽然高中课本里哲学似乎便这么宣称——但这里讲的是言之有物的理论构建，而非关乎世界本质的基础支撑。</p>
+<p>广义的理论（Theory）可以等同为知识（Knowledge），而知识被我分为 Experience、Analysis、Science 三种层级。Experience 指经验性的总结 Synthesize 和解释 Explain，例如我们可以对厕所的规划和使用形成学问，对什么样的音乐是好听的形成学问，但其来源都是已有事物的 Application，类似一个经验丰富的老技工。Analysis 指在一定抽象程度上建立的统一分析框架 Analytical Frame，大家在平常能见到的“XX学”都已经达到了这样的标准；但 Analysis 在现实中仍然有可能只能做解释或归纳性的预测。Science 被定义为 Modeling 模型化现实，给出考察对象之间的作用关联，其目的是预测 Predict 和控制 Control。我们这里的理论 Theory 便是狭义的理论，特指科学学科 Science。我给出的范式是：</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{X} \rightarrow X \rightarrow \boxed{\mathbb{T}} \rightarrow Y \rightarrow \mathcal{Y}
+\]</div>
+<p><span class="math notranslate nohighlight">\(\mathcal{X} \rightarrow X\)</span> 和 <span class="math notranslate nohighlight">\(\mathcal{Y} \rightarrow Y\)</span> 都是概念化 Conceptualize 的过程。<span class="math notranslate nohighlight">\(\mathcal{X}\)</span> 和 <span class="math notranslate nohighlight">\(\mathcal{Y}\)</span> 是现实世界的对象或情形，<span class="math notranslate nohighlight">\(X\)</span> 和 <span class="math notranslate nohighlight">\(Y\)</span> 是我们理论的输入和输出。（注意<span class="math notranslate nohighlight">\(X\)</span>可以不仅仅是某个数值变量“政府年度固定投资额”，还可以是“财政政策不变”这样更为抽象的输入或问询。）科学理论的核心是相关与因果。仅相关的关联性可以做到预测，而因果性（并不是一个容易论断的东西）可以做控制和应用。中间的模型机制 Laws or Theorems <span class="math notranslate nohighlight">\(T\)</span> 和概念 Concepts <span class="math notranslate nohighlight">\(C\)</span> 组成了一个完整的理论 <span class="math notranslate nohighlight">\(\mathbb{T}=\{T_1,\cdots,T_i,C_1,\cdots,C_j\}\)</span> 。每个定理（或定理的一部分）都可以写成 <span class="math notranslate nohighlight">\(c = T(c_1,\cdots,c_n)\)</span>，其中 <span class="math notranslate nohighlight">\(c\)</span> 是 <span class="math notranslate nohighlight">\(C\)</span> 的具象输入。我们这里缺少了几个理论里常见的模块，但其实已经纳入机制 <span class="math notranslate nohighlight">\(T\)</span> 内了，包括假设 Assumption 和公理 Axiom ——一种未经验证的假定的<span class="math notranslate nohighlight">\(C\)</span>之间的关联性；引理 Lemma 和推论 Corollary ——也是定理们特定的同义重复。</p>
+<p>利用不变性定理，当把 <span class="math notranslate nohighlight">\(\mathbb{T}\)</span> 视作通用图灵机，我们给出其 Kolmogorov 复杂度 <span class="math notranslate nohighlight">\(K(T)\)</span>（注意是对其中定律和定理部分 <span class="math notranslate nohighlight">\(T\)</span> 的描述，准确来说特定的模型下应记 <span class="math notranslate nohighlight">\(K(T|c)\)</span>），表示了理论的复杂度或丰富程度。这样避免了推论不推论的问题——可惜存在不可计算性。</p>
+<p>理论的另一组成部分是概念化（以及我想 <span class="math notranslate nohighlight">\(K(\mathbb{T}) \approx K(C) + K(T)\)</span>，不过 <span class="math notranslate nohighlight">\(K(C)\)</span> 的价值有待商榷），我们用描述度 <span class="math notranslate nohighlight">\(R(C)\)</span> 表示概念化映射 <span class="math notranslate nohighlight">\(C: \mathcal{X} \rightarrow c_X\)</span> 的定义域，等于理论的适用范围 <span class="math notranslate nohighlight">\(R(T)\)</span>。参照柯氏复杂度的上界，我们有 <strong>Theory Inequality</strong></p>
+<div class="math notranslate nohighlight">
+\[
+K(T) \le K(T|R(T)) +  S(T) + c_0 \tag{1}
+\]</div>
+<p>其中 <span class="math notranslate nohighlight">\(S(T) = log(R(T))\)</span> 为理论熵 Theory Entropy。这说明即使我们明晰了理论在现实中的适用范围，它的复杂度仍然存在一个下界。</p>
+<p>定义理论的质量 <span class="math notranslate nohighlight">\(Q(T) = \frac{S(T)}{K(T)}\)</span>，由此不难料想物理学的理论 <span class="math notranslate nohighlight">\(Q(Physics)\)</span> 会很高。</p>
+<p>我们利用链式法则</p>
+<div class="math notranslate nohighlight">
+\[
+K(T_1,T_2) = K(T_1) + K(T_2|T_1) + O(logK(T_1,T_2))
+\]</div>
+<p>考虑一个理论的泛化。由于 <span class="math notranslate nohighlight">\(K(T_2|T_1) \le K(T_2)\)</span> ，则</p>
+<div class="math notranslate nohighlight">
+\[
+Q(\sum T) \ge \frac{\sum S(T)}{\sum K(T)} \tag{2}
+\]</div>
+<p>等号在理论满足可加性（即异质建模）时成立，否则抽象化能够提高理论的质量。</p>
+<p>考虑一个理论的修正。应有 <span class="math notranslate nohighlight">\(Q(T,\delta T) \ge Q(T)\)</span>，利用 <span class="math notranslate nohighlight">\(O(\frac{logK}{K}) \rightarrow 0\)</span> 得到 <strong>Revision Inequality</strong></p>
+<div class="math notranslate nohighlight">
+\[
+K(T) \frac{\delta S}{S} \ge K(\delta T|T) \tag{3}
+\]</div>
+<p>修正理论真正的内禀复杂度存在由其延拓范围控制的上界。</p>
+<p>然后关于理论的质量，通过类似 Godel 不完备性的手段，我来指出一个可能存在的理论的质量上界 <strong>Theory Quality Bound</strong></p>
+<div class="math notranslate nohighlight">
+\[
+Q(T) \le \frac{S(\mathcal{T})}{K_0},\ \forall T \in R(\mathcal{T}) \tag{4}
+\]</div>
+<p>（<span class="math notranslate nohighlight">\(\mathcal{T}\)</span> 为全部理论的理论，没错就是今天我们的主角；<span class="math notranslate nohighlight">\(K_0\)</span> 是通用图灵机执行该不等式的固定的最短长度。）</p>
+<p>鉴于不可计算性，我们可能永远无法得知一门学问的极限究竟在哪里——学无止境，但我们将趋近它。</p>
+<p>（其实还有很多可以继续写，暂时到这里吧！）</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./wonder"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="23.10.27.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Frivolity: Red-light Preference</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="23.10.13.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Frivolity: Stand up and Cheer</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">理论的理论</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Laplx (Hao Chen)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

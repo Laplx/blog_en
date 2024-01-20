@@ -1,0 +1,3 @@
+# Astrology Basics
+
+![](./astrology.jpg)
