@@ -435,7 +435,7 @@ rt + \epsilon -\epsilon_0 = Const
 \[
 a \equiv -\frac{d\epsilon(t)}{dt} = r(1-\frac{d\tau}{dt})
 \]</div>
-<p>那么上文所述的意思则为 <span class="math notranslate nohighlight">\(e\)</span> 受到汇率贴水率折现 <span class="math notranslate nohighlight">\(e(t) = e(0) e^{-at}\)</span>。（<span class="math notranslate nohighlight">\(\tau\)</span> 为外币本征时）</p>
+<p>那么上文所述的意思就是 <span class="math notranslate nohighlight">\(e\)</span> 会受到汇率贴水率折现 <span class="math notranslate nohighlight">\(e(t) = e(0) e^{-at}\)</span>。（<span class="math notranslate nohighlight">\(\tau\)</span> 为外币本征时）</p>
 <p>有人可能会质疑这里等式的不对称性，实则与双生子佯谬同工异曲，不再赘述。</p>
 <p>同理，我们看一个绕主星旋转的伴星系统。Schwarzschild 线元</p>
 <div class="math notranslate nohighlight">
@@ -453,19 +453,19 @@ E = \frac{dt}{d\tau} (1-\frac{2M}{R})
 a = r(-\frac{2M}{RE}+\frac{1}{E}-1)
 \]</div>
 <p>其中 <span class="math notranslate nohighlight">\(E\)</span> 守恒，为单位质量的（总）能量，几何单位制。更复杂或一般的情况下则直接对 <span class="math notranslate nohighlight">\(a\)</span> 沿世界线积分。</p>
-<p>再举一个例子，我们在 Earth 上的 NYSE 里购买了 Interstellar Inc. 的股票期权，并将交割其在 SUSE（天狼星城证券交易所 Siriurb Stock Exchange，Sirius <span class="math notranslate nohighlight">\(\gamma\)</span>）的标的。</p>
+<p>再举一个例子，假设我们在 Earth 上的 NYSE 里购买了 Interstellar Inc. 的股票期权，并将交割其在 SUSE（天狼星城证券交易所 Siriurb Stock Exchange，Sirius <span class="math notranslate nohighlight">\(\gamma\)</span>）的标的。</p>
 <p>此时的无套利原理应作</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 H^1_T(P_1) =  H^2_T(P_2) - \epsilon_{12}(T_1) \Rightarrow \\
 dH^1_t(P_1) + r_1dt_1 = dH^2_t(P_2) +r_2dt_2
 \end{split}\]</div>
-<p>其中的 <span class="math notranslate nohighlight">\(H = \ln V(x,t)\)</span> 为对数价值。<span class="math notranslate nohighlight">\(P_1\)</span> 可代入我们的 European Call，<span class="math notranslate nohighlight">\(P_2\)</span> 为 <span class="math notranslate nohighlight">\(B_2\)</span>  和 <span class="math notranslate nohighlight">\(S_2\)</span> 的一个 Portfolio，<span class="math notranslate nohighlight">\(r_1=r_2\)</span>；利用上式，可以如法炮制得到新版的 Black-Scholes 方程</p>
+<p>其中的 <span class="math notranslate nohighlight">\(H = \ln V(x,t)\)</span> 为对数价值。<span class="math notranslate nohighlight">\(P_1\)</span> 可代入我们的 European Call，<span class="math notranslate nohighlight">\(P_2\)</span> 为 <span class="math notranslate nohighlight">\(B_2\)</span>  和 <span class="math notranslate nohighlight">\(S_2\)</span> 的一个 Portfolio，<span class="math notranslate nohighlight">\(r_1=r_2\)</span>；利用上式，可以如法炮制得到新版的 Relativistic Black-Scholes 方程</p>
 <div class="math notranslate nohighlight">
 \[
 \gamma \frac{\partial V}{\partial t} + rS\frac{\partial V}{\partial x} + \frac{1}{2} \gamma \sigma^2 S^2 \frac{\partial^2 V}{\partial x^2} +(\gamma-2)rV = 0
 \]</div>
-<p>结合边界条件，解得</p>
+<p>令 <span class="math notranslate nohighlight">\(\gamma = 1\)</span>，方程退化为我们熟知的样子。结合边界条件，解得</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}

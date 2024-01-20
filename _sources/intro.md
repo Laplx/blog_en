@@ -44,7 +44,6 @@ var gitalk = new Gitalk({
   admin: ['Laplx'],
   id: 'blog_en_id',  // Ensure uniqueness and length less than 50, but co-use here
   distractionFreeMode: false  // Facebook-like distraction free mode
-  language: 'en',
 })
 
 gitalk.render('gitalk-container')
