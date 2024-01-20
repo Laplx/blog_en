@@ -42,7 +42,7 @@ var gitalk = new Gitalk({
   repo: 'blog_comment',
   owner: 'Laplx',
   admin: ['Laplx'],
-  id: 'blog_id',  // Ensure uniqueness and length less than 50, but co-use here
+  id: 'blog_en_id',  // Ensure uniqueness and length less than 50, but co-use here
   distractionFreeMode: false  // Facebook-like distraction free mode
   language: 'en',
 })

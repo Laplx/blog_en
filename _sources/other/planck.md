@@ -1,4 +1,4 @@
-# Planck 公式在历史上是怎么诞生的
+# How the Planck Formula was Born in History
 
 ### Wein：热力学结合实验定律猜测
 

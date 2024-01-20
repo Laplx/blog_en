@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Newton 力学 &#8212; My Blog en</title>
+    <title>Newton Mechanics &#8212; My Blog en</title>
   
   
   
@@ -74,7 +74,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="量子力学的形式理论" href="quantum_form.html" />
+    <link rel="next" title="Formal Theory of Quantum Mechanics" href="quantum_form.html" />
     <link rel="prev" title="Stokes Formula" href="Stokes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="English"/>
@@ -228,8 +228,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../know.html">Knowledge</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../know/cookbook.html">The Matrix Cookbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../know/py3rdpartylib.html">Python 第三方库管理等问题</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../know/pyPEP8.html">Python 代码规范</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/py3rdpartylib.html">Problems in Managing Third-party Libs of Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../know/pyPEP8.html">Style Guide for Python Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../know/Gregg.html">Gregg Shorthand</a></li>
 </ul>
 </li>
@@ -239,16 +239,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../sund/ques.html">Fun Questions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sund/folkscience.html">Biography of Folk Science</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sund/toiletology.html">Toiletology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">行乞寺记</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sund/olympics.html">Words on Olympiad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">Xingqi Temple</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../other.html">Column</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Stokes.html">Stokes Formula</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Newton 力学</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Newton Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quantum_form.html">Formal Theory of Quantum Mechanics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rglights.html">Choices in Crossroads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+<li class="toctree-l2"><a class="reference internal" href="planck.html">How the Planck Formula was Born in History</a></li>
 </ul>
 </li>
 </ul>
@@ -387,7 +387,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Newton 力学</h1>
+    <h1>Newton Mechanics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -399,19 +399,19 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#galileo">Galileo 时空</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">质点与质点组</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Newton 第一定律</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton">Newton 第一定律</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gailileo">Gailileo 变换</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Newton 第二定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Newton 第三定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">运动与牛顿方程</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">伽利略相对性原理</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">守恒量</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">质心</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">质心运动</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">质心系 (相对质心运动的描述以及地系到质心系的转化)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Newton 第二定律</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Newton 第三定律</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">运动与牛顿方程</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">伽利略相对性原理</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">守恒量</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">质心</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">质心运动</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">质心系 (相对质心运动的描述以及地系到质心系的转化)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">坐标系及参照系变换</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">坐标系及参照系变换</a></li>
 </ul>
             </nav>
         </div>
@@ -423,8 +423,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="newton">
-<h1>Newton 力学<a class="headerlink" href="#newton" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="newton-mechanics">
+<h1>Newton Mechanics<a class="headerlink" href="#newton-mechanics" title="Permalink to this heading">#</a></h1>
 <section id="galileo">
 <h2>Galileo 时空<a class="headerlink" href="#galileo" title="Permalink to this heading">#</a></h2>
 <p>Galileo 模型把事件抽象为时空中的一个点，时空同胚于在 <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> 上的四维仿射空间 <span class="math notranslate nohighlight">\(\mathcal{A}^{4}\)</span>。</p>
@@ -442,8 +442,8 @@ document.write(`
 \mathbf{F}_{i}=\sum_{j\neq i} \mathbf{F}_{ji}+\mathbf{F}_{i}^{(e)}(+\mathbf{F}_{i}^{(s)})
 \]</div>
 </section>
-<section id="id2">
-<h2>Newton 第一定律<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="newton">
+<h2>Newton 第一定律<a class="headerlink" href="#newton" title="Permalink to this heading">#</a></h2>
 <p>有一类特殊的参照系，其时空平直，称为惯性系。惯性系中，自由质点有</p>
 <div class="math notranslate nohighlight">
 \[
@@ -509,8 +509,8 @@ t \\
 \]</div>
 <p>再由时空线性得到伽利略变换。</p>
 </section>
-<section id="id3">
-<h2>Newton 第二定律<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<section id="id2">
+<h2>Newton 第二定律<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
 m \ddot{ \mathbf{r} } = \mathbf{F}
@@ -546,8 +546,8 @@ T+V=E
 <div><p>接下来我们的研究对象从单质点变为质点组。</p>
 </div></blockquote>
 </section>
-<section id="id4">
-<h2>Newton 第三定律<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<section id="id3">
+<h2>Newton 第三定律<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
 <p>弱形式</p>
 <div class="math notranslate nohighlight">
 \[
@@ -559,8 +559,8 @@ T+V=E
 \mathbf{r}_{i} \times \mathbf{F}_{ji} + \mathbf{M}_{ji} + \mathbf{r}_{j} \times \mathbf{F}_{ij} + \mathbf{M}_{ij} = 0
 \]</div>
 </section>
-<section id="id5">
-<h2>运动与牛顿方程<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<section id="id4">
+<h2>运动与牛顿方程<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
 <p>结合牛顿定律，可以将数学规律概括为如下形式。</p>
 <p>n 点系统的运动为映射</p>
 <div class="math notranslate nohighlight">
@@ -579,8 +579,8 @@ T+V=E
 \]</div>
 <p>由常微分方程解的存在与唯一性定理，该映射与初始条件唯一决定一个运动，因此一个力学系统的初始位置和初速度唯一地决定其运动。</p>
 </section>
-<section id="id6">
-<h2>伽利略相对性原理<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<section id="id5">
+<h2>伽利略相对性原理<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
 <p>要求牛顿方程在伽利略变换下不变。</p>
 <ul class="simple">
 <li><p>时间平移不变<span class="math notranslate nohighlight">\(\implies \ddot{\mathbf{r}}=\mathbf{F}(\mathbf{r},\dot{\mathbf{r}})\)</span></p></li>
@@ -588,8 +588,8 @@ T+V=E
 <li><p>空间正交变换不变 <span class="math notranslate nohighlight">\(\implies \mathbf{F}(\mathbf{R}\mathbf{x},\mathbf{R}\dot{\mathbf{x}},t)=\mathbf{R}\mathbf{F}(\mathbf{x},\dot{\mathbf{x}})\)</span></p></li>
 </ul>
 </section>
-<section id="id7">
-<h2>守恒量<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<section id="id6">
+<h2>守恒量<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
 <p>在多质点系统中类似有</p>
 <div class="math notranslate nohighlight">
 \[
@@ -613,10 +613,10 @@ dW_{外}+dW_{内非}=d(T+V_{内势})
 \]</div>
 <p>普遍情况见诺特定理。</p>
 </section>
+<section id="id7">
+<h2>质心<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
 <section id="id8">
-<h2>质心<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h2>
-<section id="id9">
-<h3>质心运动<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h3>质心运动<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
 \mathbf{r}_{c} = \frac{\sum m_{i} \mathbf{r}_{i}}{\sum m_{i}}
@@ -631,8 +631,8 @@ m \ddot{\mathbf{r}}_{c} = \sum \mathbf{F}_{i}^{(e)}
 \sum \mathbf{F}_{i}^{(e)} \cdot d \mathbf{r}_{c} =d \left( \frac{1}{2} m \dot{r}_{c}^{2} \right)
 \]</div>
 </section>
-<section id="id10">
-<h3>质心系 (相对质心运动的描述以及地系到质心系的转化)<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<section id="id9">
+<h3>质心系 (相对质心运动的描述以及地系到质心系的转化)<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
 <p>地系中与质心系中物理量的变换有 Konig 定理</p>
 <div class="math notranslate nohighlight">
 \[
@@ -649,8 +649,8 @@ p^{'}=0
 <p>以质心为参考点时惯性系定律成立。</p>
 </section>
 </section>
-<section id="id11">
-<h2>坐标系及参照系变换<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h2>
+<section id="id10">
+<h2>坐标系及参照系变换<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -699,7 +699,7 @@ p^{'}=0
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">量子力学的形式理论</p>
+        <p class="prev-next-title">Formal Theory of Quantum Mechanics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -723,19 +723,19 @@ p^{'}=0
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#galileo">Galileo 时空</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">质点与质点组</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Newton 第一定律</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton">Newton 第一定律</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gailileo">Gailileo 变换</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Newton 第二定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Newton 第三定律</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">运动与牛顿方程</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">伽利略相对性原理</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">守恒量</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">质心</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">质心运动</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">质心系 (相对质心运动的描述以及地系到质心系的转化)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Newton 第二定律</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Newton 第三定律</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">运动与牛顿方程</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">伽利略相对性原理</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">守恒量</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">质心</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">质心运动</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">质心系 (相对质心运动的描述以及地系到质心系的转化)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">坐标系及参照系变换</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">坐标系及参照系变换</a></li>
 </ul>
   </nav></div>
 

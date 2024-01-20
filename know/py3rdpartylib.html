@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Python 第三方库管理等问题 &#8212; My Blog en</title>
+    <title>Problems in Managing Third-party Libs of Python &#8212; My Blog en</title>
   
   
   
@@ -72,7 +72,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python 代码规范" href="pyPEP8.html" />
+    <link rel="next" title="Style Guide for Python Code" href="pyPEP8.html" />
     <link rel="prev" title="The Matrix Cookbook" href="cookbook.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="English"/>
@@ -226,8 +226,8 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../know.html">Knowledge</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="cookbook.html">The Matrix Cookbook</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Python 第三方库管理等问题</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pyPEP8.html">Python 代码规范</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Problems in Managing Third-party Libs of Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyPEP8.html">Style Guide for Python Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Gregg.html">Gregg Shorthand</a></li>
 </ul>
 </li>
@@ -237,16 +237,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../sund/ques.html">Fun Questions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sund/folkscience.html">Biography of Folk Science</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sund/toiletology.html">Toiletology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">行乞寺记</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sund/olympics.html">Words on Olympiad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sund/xingqisiji.html">Xingqi Temple</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../other.html">Column</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../other/Stokes.html">Stokes Formula</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton 力学</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">量子力学的形式理论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/Newton.html">Newton Mechanics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/quantum_form.html">Formal Theory of Quantum Mechanics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../other/rglights.html">Choices in Crossroads</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">Planck 公式在历史上是怎么诞生的</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other/planck.html">How the Planck Formula was Born in History</a></li>
 </ul>
 </li>
 </ul>
@@ -385,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Python 第三方库管理等问题</h1>
+    <h1>Problems in Managing Third-party Libs of Python</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -408,8 +408,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="python">
-<h1>Python 第三方库管理等问题<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="problems-in-managing-third-party-libs-of-python">
+<h1>Problems in Managing Third-party Libs of Python<a class="headerlink" href="#problems-in-managing-third-party-libs-of-python" title="Permalink to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>以下均为我在碰到类似问题搜索并尝试后自己判断的结论，<strong>无法保证正确性与普适性</strong>。<br />
@@ -528,7 +528,7 @@ pip install（conda里的python的pip）安装在Lib/site-packages，这个文�
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python 代码规范</p>
+        <p class="prev-next-title">Style Guide for Python Code</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

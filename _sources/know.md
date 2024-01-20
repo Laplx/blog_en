@@ -4,7 +4,7 @@ Here are some files and e-books I have collected. Hoping these helps.
 
 ### Personal Books
 
-<library.laplx.cc>
+[library.laplx.cc](https://library.laplx.cc)
 
 *（updated every Jan. and Jul.）*
 
