@@ -1,12 +1,10 @@
-# Welcome - Homepage
-
-```{card} 点击切换中文版
-:link: https://laplx.cc
-```
+# Welcome
 
 ![](./introg.jpg)
 
 *（1/22/1992, Deng Xiaoping was visiting Shenzhen Xianhu Botanical Garden.）*
+
+**Other Language:** Click [here](laplx.cc) for Chinese version.
 
 **Note:** Some articles are remained to be translated or translated by mechines.
 
@@ -44,7 +42,7 @@ var gitalk = new Gitalk({
   repo: 'blog_comment',
   owner: 'Laplx',
   admin: ['Laplx'],
-  id: 'blog_id',  // Ensure uniqueness and length less than 50
+  id: 'blog_en_id',  // Ensure uniqueness and length less than 50
   distractionFreeMode: false  // Facebook-like distraction free mode
   language: 'en',
 })
