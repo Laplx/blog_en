@@ -1,0 +1,82 @@
+- file: intro
+- file: note
+  sections:
+    - file: note/23.12
+    - file: note/evol_game
+    - file: note/mechbrief
+    - file: note/millerorr
+    - file: note/solow
+    - file: note/intro_causalinfer
+    - file: note/mathmodel
+    - file: note/astrology
+    - file: note/crypto
+    - file: note/pre1
+- file: proj
+  sections:
+    - file: swarm/Swarm.md
+      title: Swarm Report
+    - file: hlm/hlm_index.md
+      title: The Left Dream of Red Chamber
+- file: wonder
+  sections:
+    - file: wonder/24.1.19
+    - file: wonder/24.1.12
+    - file: wonder/24.1.5
+    - file: wonder/23.12.29
+    - file: wonder/23.12.22
+    - file: wonder/23.12.15
+    - file: wonder/23.12.8
+    - file: wonder/23.12.1
+    - file: wonder/23.11.24
+    - file: wonder/23.11.17
+    - file: wonder/23.11.10
+    - file: wonder/23.11.3
+    - file: wonder/23.10.27
+    - file: wonder/23.10.20
+    - file: wonder/23.10.13
+    - file: wonder/23.10.6
+    - file: wonder/23.9.29
+    - file: wonder/23.9.22
+    - file: wonder/23.9.15
+    - file: wonder/23.9.8
+    - file: wonder/23.9.1
+    - file: wonder/23.8.25
+    - file: wonder/23.8.18
+    - file: wonder/23.8.11
+    - file: wonder/23.8.4
+    - file: wonder/23.7.28
+    - file: wonder/23.7.21
+    - file: wonder/23.7.14
+    - file: wonder/23.7.7
+    - file: wonder/23.6.30
+    - file: wonder/23.6.23
+    - file: wonder/23.6.16
+    - file: wonder/23.6.9
+    - file: wonder/23.6.2
+    - file: wonder/23.5.26
+    - file: wonder/23.5.19
+    - file: wonder/23.5.12
+    - file: wonder/23.5.5
+- file: know
+  sections:
+    - file: know/cookbook.md
+    - file: know/py3rdpartylib
+    - file: know/pyPEP8
+    - file: know/Gregg.md
+      title: Gregg Shorthand
+- file: sund
+  sections:
+    - file: sund/articles
+    - file: sund/links
+    - file: sund/ques
+    - file: sund/folkscience
+    - file: sund/toiletology
+    - file: sund/xingqisiji
+    - file: sund/olympics
+- file: other
+  sections:
+    - file: other/Stokes
+    - file: other/Newton
+    - file: other/quantum_form
+    - file: other/rglights
+    - file: other/planck

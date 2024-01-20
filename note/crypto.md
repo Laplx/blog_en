@@ -1,0 +1,3 @@
+# Cryptocurrency Basics
+
+![](./crypto.jpg)
