@@ -12,7 +12,7 @@ Formal Theory of Quantum Mechanics
 
 Choices in Crossraods
 
-How the Planck formula was born in history
+How the Planck Formula was Born in History
 
 ---
 

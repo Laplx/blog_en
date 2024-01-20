@@ -1,4 +1,4 @@
-# 量子力学的形式理论
+# Formal Theory of Quantum Mechanics
 
 系统的运动状态**由 Hilbert 空间（所有平方可积函数构成的线性空间）中的一个矢量 $\ket{ \mathfrak{I} }$ 描述**。
 

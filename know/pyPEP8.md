@@ -1,4 +1,4 @@
-# Python 代码规范
+# Style Guide for Python Code
 
 ## (PEP 8 - Style Guide for Python Code)
 

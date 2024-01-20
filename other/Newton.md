@@ -1,4 +1,4 @@
-# Newton 力学
+# Newton Mechanics
 
 ### Galileo 时空
 

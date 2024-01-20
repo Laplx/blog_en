@@ -1,4 +1,4 @@
-# Python 第三方库管理等问题
+# Problems in Managing Third-party Libs of Python
 
 ```{note}
 以下均为我在碰到类似问题搜索并尝试后自己判断的结论，**无法保证正确性与普适性**。  

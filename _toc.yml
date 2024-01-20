@@ -71,8 +71,8 @@
     - file: sund/ques
     - file: sund/folkscience
     - file: sund/toiletology
-    - file: sund/xingqisiji
     - file: sund/olympics
+    - file: sund/xingqisiji
 - file: other
   sections:
     - file: other/Stokes
