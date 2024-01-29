@@ -2,7 +2,7 @@
 
 ![](./introg.jpg)
 
-*（1/22/1992, Deng Xiaoping was visiting Shenzhen Xianhu Botanical Garden.）*
+*（Science reveals the top breakthrough of 2023: weight loss drugs GLP-1）*
 
 **Other Language:** Click [here](https://laplx.cc) for Chinese version.
 

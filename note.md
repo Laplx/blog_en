@@ -16,6 +16,8 @@ Some notes and manuscripts are written in **Chinese**.
 
 [*Laplx* Physics Olympics (II)](note/phy-2.pdf)
 
+[*Laplx* History of China's Reform and Opening-up](https://laplx.cc/note/china_reform)
+
 ### Journal Reading
 
 23.12
