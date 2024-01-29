@@ -6,6 +6,8 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### Contents
 
+- [24.1.26: Infinite Turing Machine](https://en.laplx.cc/wonder/24.1.26.html)
+
 - [24.1.19: Astrofinance](https://en.laplx.cc/wonder/24.1.19.html)
 - [24.1.12: Transportation Cost](https://en.laplx.cc/wonder/24.1.12.html)
 - [24.1.5: C&C Theorem](https://en.laplx.cc/wonder/24.1.5.html)
