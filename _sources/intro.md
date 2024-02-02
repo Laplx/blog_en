@@ -2,7 +2,7 @@
 
 ![](./introg.jpg)
 
-*（Science reveals the top breakthrough of 2023: weight loss drugs GLP-1）*
+*（2/1/1662 Zheng Chenggong(Koxinga) recaptured Taiwan Island from Dutch.）*
 
 **Other Language:** Click [here](https://laplx.cc) for Chinese version.
 
