@@ -2,7 +2,7 @@
 
 ![](./introg.jpg)
 
-*（2/1/1662 Zheng Chenggong(Koxinga) recaptured Taiwan Island from Dutch.）*
+*（Fractal Branches.）*
 
 **Other Language:** Click [here](https://laplx.cc) for Chinese version.
 
