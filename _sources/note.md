@@ -6,6 +6,12 @@ Some notes and manuscripts are written in **Chinese**.
 
 ### Personal Notes
 
+[*Laplx* Information and Computation](note/info_compu.pdf)
+
+[*Laplx* Topology](note/topology.pdf)
+
+[*Laplx* Basics of Analysis and Algebra](note/anal.pdf)
+
 [*Laplx* Manuscript of Multivariate Statistics](note/multistat_o.pdf)
 
 [*Laplx* Linear Algebra](note/la.pdf)

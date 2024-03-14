@@ -2,7 +2,7 @@
 
 ![](./introg.jpg)
 
-*（Fractal Branches.）*
+*（Buildings.）*
 
 **Other Language:** Click [here](https://laplx.cc) for Chinese version.
 
