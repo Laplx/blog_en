@@ -18,11 +18,13 @@ Some notes and manuscripts are written in **Chinese**.
 
 [*Laplx* Probability and Statistics](note/probstat.pdf)
 
+[*Laplx* Game Theory](note/game.pdf)
+
 [*Laplx* Physics Olympics (I)](note/phy-1.pdf)
 
 [*Laplx* Physics Olympics (II)](note/phy-2.pdf)
 
-[*Laplx* History of China's Reform and Opening-up](https://laplx.cc/note/china_reform)
+[*Laplx* History of China's Reform and Opening-up](note/china_reform.pdf)
 
 ### Journal Reading
 
