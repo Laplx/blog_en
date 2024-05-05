@@ -2,7 +2,7 @@
 
 ![](./introg.jpg)
 
-*（Buildings.）*
+*（Cascading.）*
 
 **Other Language:** Click [here](https://laplx.cc) for Chinese version.
 
