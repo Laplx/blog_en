@@ -1,30 +1,26 @@
-# Knowledge
+# Sharing
 
 Here are some files and e-books I have collected. Hoping these helps.
 
-### Personal Books
-
-[library.laplx.cc](https://library.laplx.cc)
-
-*（updated every Jan. and Jul.）*
-
 ### Mathematics
 
-The Matrix and Probability Cookbook
+[The Matrix and Probability Cookbook](./know/cookbook.md)
 
 ### Computer Tech
 
-Problems in Managing Third-party Libs of Python
+[Problems in Managing Third-party Libs of Python](./know/py3rdpartylib)
 
-Style Guide for Python Code（translated and abridged from Python official website）
+[Style Guide for Python Code](./know/pyPEP8) (translated and abridged from Python official website)
 
 ### Economics
 
 Topics in Public Economics by Lan Xiaohuan
 
+The Theory of Corporate Finance by Jean Tirole
+
 ### Others
 
-Gregg Shorthand -- A Light-Line Phonography for the Million (Anniversary Edition)
+[Gregg Shorthand -- A Light-Line Phonography for the Million (Anniversary Edition)](./know/Gregg.md)
 
 *（for pdf files, the download links are on the bottom of their pages.）*
 

@@ -1,26 +1,22 @@
 # Welcome
 
-![](./introg.jpg)
-
-*（Cascading.）*
-
 **Other Language:** Click [here](https://laplx.cc) for Chinese version.
 
 **Note:** Some articles are remained to be translated or translated by mechines.
 
-### What's here?
+---
 
 This is <font face="Consolas" size=4><b>Lapl</b></font><font face="Consolas" size=4 color="red"><b>x</b></font> <font face="Consolas" size=4><b>(Hao Chen)</b></font>'s GithubPage blog.
 
 I create ideas, make studies and share informations here.
 
-### Want to contact me?
+---
 
 Email：laplx@foxmail.com  laplx@outlook.com
 
 Affiliation：School of Economics, Fudan University, Shanghai
 
-### Comments
+---
 
 Use Github accounts to post your comments.
 
