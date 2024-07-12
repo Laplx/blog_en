@@ -4,11 +4,17 @@ There is some boring, funny and messy content.
 
 ### Contents
 
+Sharing
+
 Articles
 
 Link Portal
 
 Fun Questions
+
+[library.laplx.cc](library.laplx.cc)
+
+---
 
 Biography of Folk Science
 

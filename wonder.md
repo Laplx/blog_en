@@ -6,6 +6,14 @@ I will upload one of my ideas, fantasies, or proposals every frivolous Friday, m
 
 ### Contents
 
+- [24.7.12: Ludology](https://en.laplx.cc/wonder/24.7.12.html)
+
+- [24.5.3: Anniversary and Phantom Traffic Jams](https://en.laplx.cc/wonder/24.5.3.html)
+
+- [24.4.26: Regression on Channel](https://en.laplx.cc/wonder/24.4.26.html)
+
+- [24.2.2: New Year's Special: Wenzhou](https://en.laplx.cc/wonder/24.2.2.html)
+
 - [24.1.26: Infinite Turing Machine](https://en.laplx.cc/wonder/24.1.26.html)
 
 - [24.1.19: Astrofinance](https://en.laplx.cc/wonder/24.1.19.html)

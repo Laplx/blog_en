@@ -4,6 +4,12 @@ Share my own notes here. Some are original, and some are abstracts or comments. 
 
 Some notes and manuscripts are written in **Chinese**.
 
+### Small Projects
+
+Swarm(Social Location-sharing App) Data Analysis Report
+
+*The Dream of Red Chamber* and Linguistic Statistics
+
 ### Personal Notes
 
 [*Laplx* Information and Computation](note/info_compu.pdf)
@@ -26,25 +32,9 @@ Some notes and manuscripts are written in **Chinese**.
 
 [*Laplx* History of China's Reform and Opening-up](note/china_reform.pdf)
 
-### Journal Reading
+### Manuscripts
 
-23.12
-
-**Presentation** of Zhuo Chen, Zhiguo He, Chun Liu, *The financing of local government in China: Stimulus loan wanes and shadow banking waxes*, Journal of Financial Economics, Volume 137, Issue 1, 2020
-
-### Summary
-
-Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995 
-
-Hirsch, Smale & Devaney, *Differential Equations, Dynamical Systems, and an Introduction to Chaos*,  Elsevier Inc., 2013
-
-Norbert Weiner, *Cybernetics, or Control and Communication in the Animal and the Machine*, MIT Press, 1948 and 1961
-
-**Lecture Notes** of Differential Game Theory and Mean Field Game Theory
-
-### Other Manuscripts
-
-Outline of Evolutionary Game Theory
+Outline of Evolutionary Game Theory (Jorgen W. Weibull, *Evolutionary Game Theory*, MIT Press, 1995)
 
 A Brief Draft of Classical Mechanics
 
@@ -60,11 +50,15 @@ Astrology Basics
 
 Cryptocurrency Basics
 
-### Simple Instructions
+### Others
 
 Introduction of Search Engine
 
 Git Basics
+
+**Presentation** of Zhuo Chen, Zhiguo He, Chun Liu, *The financing of local government in China: Stimulus loan wanes and shadow banking waxes*, Journal of Financial Economics, Volume 137, Issue 1, 2020
+
+**Notes** of Differential Game Theory and Mean Field Game Theory
 
 ---
 
